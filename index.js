@@ -8,7 +8,7 @@ app.get("/", function(req,res){
 
 //rota do cadastro de produtos
 app.get("/produtos", function(req,res){
-    res.send("<h1>Lista de Produtos!</h1>");
+    res.send("<h1>Lista de Produtos! (ok ok ok)</h1>");
 })
 
 //rota com parametro 
@@ -30,7 +30,7 @@ app.get("/cadastro/:nome?", function(req,res){
     
 })
 
-app.listen(process.env.PORT ?? 3000,function(erro){  // cria a aplicação na porta 4000
+app.listen(process.env.PORT ?? 4000,function(erro){  // cria a aplicação na porta 4000
     if (erro){
         console.log("Erro ao Iniciar.");
     }else{
